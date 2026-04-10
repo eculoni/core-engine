@@ -1,0 +1,33 @@
+{
+  "serviceName": "core-engine",
+  "status": "running",
+  "timestamp": "2024-10-27T10:00:00Z",
+  "uptimeSeconds": 3600,
+  "apiVersion": "1.2.3",
+  "environment": "production",
+  "resourceUsage": {
+    "cpuPercentage": 15.2,
+    "memoryMB": 512,
+    "diskSpaceGB": 20.5
+  },
+  "dependencies": [
+    {
+      "name": "database",
+      "status": "healthy",
+      "responseTimeMs": 25
+    },
+    {
+      "name": "messageQueue",
+      "status": "degraded",
+      "errorMessage": "High latency detected"
+    }
+  ],
+  "buildInfo": {
+    "commitHash": "a1b2c3d4e5f6",
+    "buildNumber": 1234
+  },
+  "customMetrics": {
+    "activeConnections": 150,
+    "requestsPerSecond": 25.7
+  }
+}
